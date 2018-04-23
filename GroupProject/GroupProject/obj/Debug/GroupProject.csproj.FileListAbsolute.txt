@@ -10,3 +10,6 @@ C:\Users\Sarah\Desktop\GroupProject\GroupProject\obj\Debug\GroupProject.csproj.C
 C:\Users\Sarah\Desktop\GroupProject\GroupProject\obj\Debug\GroupProject.exe
 C:\Users\Sarah\Desktop\GroupProject\GroupProject\obj\Debug\GroupProject.pdb
 C:\Users\Sarah\Desktop\GroupProject\GroupProject\obj\Debug\GroupProject.CreateEvent.resources
+C:\Users\Sean\Source\Repos\Final\GroupProject\GroupProject\bin\Debug\GroupProject.exe.config
+C:\Users\Sean\Source\Repos\Final\GroupProject\GroupProject\obj\Debug\GroupProject.exe
+C:\Users\Sean\Source\Repos\Final\GroupProject\GroupProject\obj\Debug\GroupProject.pdb
