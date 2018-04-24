@@ -12,17 +12,28 @@ namespace GroupProject
 {
     public partial class Form1 : Form
     {
+        string userId;
         public Form1()
         {
             InitializeComponent();
             this.Text = "Sign up";
+            checkBox1.Checked = true;
         }
+
 
         private void Signup_Click(object sender, EventArgs e)
         {
-            //login after signup
-            login login = new login();
-            login.Show();
+
+            
+            if((tb_fname.Text == "" || tb_lname.Text == "" || tb_email.Text == "" || tb_password.Text == "" || comboBox1.Text == "") || (checkBox1.Checked != true && checkBox2.Checked != true && checkBox3.Checked != true))
+            {
+                    MessageBox.Show("Pleae fill all fields.", "Empty Fields");
+            }
+            else
+            {
+                ViewEvents viewEvents = new ViewEvents(userId);
+                viewEvents.Show();
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -50,6 +61,35 @@ namespace GroupProject
             comboBox1.Items.Add("Faculty");
             comboBox1.Items.Add("Student");
             comboBox1.Items.Add("Staff");
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked == true)
+            {
+                checkBox2.Checked = false;
+                checkBox3.Checked = false;
+            }
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox2.Checked == true)
+            {
+                checkBox1.Checked = false;
+                checkBox3.Checked = false;
+            }
+
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox3.Checked == true)
+            {
+                checkBox1.Checked = false;
+                checkBox2.Checked = false;
+            }
         }
     }
 }

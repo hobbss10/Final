@@ -14,7 +14,7 @@ namespace GroupProject
         public UserEvent(int userID, int eventID)
         {
             UserID = userID;
-            EventID
+            EventID = eventID;
         }
     }
 }

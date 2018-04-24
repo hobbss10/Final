@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GroupProject.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -70,6 +73,18 @@
     <Compile Include="User.cs" />
     <Compile Include="UserCreatedEvent.cs" />
     <Compile Include="UserEvent.cs" />
+    <Compile Include="ViewCreatedEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCreatedEvents.Designer.cs">
+      <DependentUpon>ViewCreatedEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEvents.Designer.cs">
+      <DependentUpon>ViewEvents.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CreateEvent.resx">
       <DependentUpon>CreateEvent.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +104,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewCreatedEvents.resx">
+      <DependentUpon>ViewCreatedEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEvents.resx">
+      <DependentUpon>ViewEvents.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
