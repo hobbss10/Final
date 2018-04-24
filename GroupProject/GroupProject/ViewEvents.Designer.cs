@@ -32,8 +32,7 @@
             this.dropDownEvents = new System.Windows.Forms.ComboBox();
             this.textBoxEvents = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.b_join = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +47,7 @@
             // dropDownEvents
             // 
             this.dropDownEvents.FormattingEnabled = true;
-            this.dropDownEvents.Location = new System.Drawing.Point(88, 342);
+            this.dropDownEvents.Location = new System.Drawing.Point(37, 356);
             this.dropDownEvents.Name = "dropDownEvents";
             this.dropDownEvents.Size = new System.Drawing.Size(481, 21);
             this.dropDownEvents.TabIndex = 0;
@@ -56,7 +55,7 @@
             // 
             // textBoxEvents
             // 
-            this.textBoxEvents.Location = new System.Drawing.Point(88, 68);
+            this.textBoxEvents.Location = new System.Drawing.Point(37, 68);
             this.textBoxEvents.Multiline = true;
             this.textBoxEvents.Name = "textBoxEvents";
             this.textBoxEvents.ReadOnly = true;
@@ -75,27 +74,16 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Events";
             // 
-            // button1
+            // b_join
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(88, 416);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 41);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Join Event";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(450, 416);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 41);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Delete Event";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.b_join.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_join.Location = new System.Drawing.Point(569, 336);
+            this.b_join.Name = "b_join";
+            this.b_join.Size = new System.Drawing.Size(119, 41);
+            this.b_join.TabIndex = 3;
+            this.b_join.Text = "Join Event";
+            this.b_join.UseVisualStyleBackColor = true;
+            this.b_join.Click += new System.EventHandler(this.button1_Click);
             // 
             // menuStrip1
             // 
@@ -120,13 +108,13 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -162,9 +150,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 554);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(709, 436);
+            this.Controls.Add(this.b_join);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxEvents);
             this.Controls.Add(this.dropDownEvents);
@@ -172,6 +159,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ViewEvents";
             this.Text = "View Events";
+            this.DoubleClick += new System.EventHandler(this.ViewEvents_DoubleClick);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -184,8 +172,7 @@
         private System.Windows.Forms.ComboBox dropDownEvents;
         private System.Windows.Forms.TextBox textBoxEvents;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button b_join;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;

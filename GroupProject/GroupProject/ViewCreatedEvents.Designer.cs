@@ -30,11 +30,12 @@
         {
             this.textBoxEvents = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxEvents
             // 
-            this.textBoxEvents.Location = new System.Drawing.Point(97, 111);
+            this.textBoxEvents.Location = new System.Drawing.Point(101, 65);
             this.textBoxEvents.Multiline = true;
             this.textBoxEvents.Name = "textBoxEvents";
             this.textBoxEvents.ReadOnly = true;
@@ -53,11 +54,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(261, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(154, 26);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Owned Events";
+            // 
             // ViewCreatedEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 464);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBoxEvents);
             this.Name = "ViewCreatedEvents";
@@ -71,5 +83,6 @@
 
         private System.Windows.Forms.TextBox textBoxEvents;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
     }
 }

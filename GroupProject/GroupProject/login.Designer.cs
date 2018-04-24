@@ -30,8 +30,8 @@
         {
             this.password = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_pass = new System.Windows.Forms.TextBox();
+            this.tb_email = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,19 +57,19 @@
             this.email.TabIndex = 12;
             this.email.Text = "Email:";
             // 
-            // textBox4
+            // tb_pass
             // 
-            this.textBox4.Location = new System.Drawing.Point(199, 133);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(174, 20);
-            this.textBox4.TabIndex = 11;
+            this.tb_pass.Location = new System.Drawing.Point(199, 133);
+            this.tb_pass.Name = "tb_pass";
+            this.tb_pass.Size = new System.Drawing.Size(174, 20);
+            this.tb_pass.TabIndex = 11;
             // 
-            // textBox3
+            // tb_email
             // 
-            this.textBox3.Location = new System.Drawing.Point(199, 96);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(174, 20);
-            this.textBox3.TabIndex = 10;
+            this.tb_email.Location = new System.Drawing.Point(199, 96);
+            this.tb_email.Name = "tb_email";
+            this.tb_email.Size = new System.Drawing.Size(174, 20);
+            this.tb_email.TabIndex = 10;
             // 
             // button1
             // 
@@ -121,8 +121,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.password);
             this.Controls.Add(this.email);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tb_pass);
+            this.Controls.Add(this.tb_email);
             this.Name = "login";
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -135,8 +135,8 @@
 
         private System.Windows.Forms.Label password;
         private System.Windows.Forms.Label email;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_pass;
+        private System.Windows.Forms.TextBox tb_email;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
